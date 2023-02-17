@@ -14,10 +14,17 @@ int main(void)
 		{
 			if (a < b)
 			{
+				if (a == 8 && b == 9)
+				{
+					printf("%d%d", a, b);
+				}
+				else
+				{
 				putchar(a + '0');
 				putchar(b + '0');
 				putchar(',');
 				putchar(' ');
+				}
 			}
 		}
 	}
