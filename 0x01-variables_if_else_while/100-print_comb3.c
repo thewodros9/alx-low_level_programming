@@ -16,7 +16,7 @@ int main(void)
 			{
 				if (a == 8 && b == 9)
 				{
-					printf("%d%d", a, b);
+					printf("%d%d ", a, b);
 				}
 				else
 				{
