@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - entry point
  * Return: Always 0 (success)
@@ -6,27 +7,27 @@
 int main(void)
 {
 	int a;
-	int b;
+	int b = 0;
 
-	for (a = 0; a < 9; a++)
+	while (d < 10)
 	{
-		for (b = 1; b < 10; b++)
+		c = 0;
+		while (c < 10)
 		{
-			if (a < b)
+			if (d != c && d < c)
 			{
-				if (a == 8 && b == 9)
+				putchar('0' + d);
+				putchar('0' + c);
+				if (c + d != 17)
 				{
-					printf("%d%d,", a, b);
-				}
-				else
-				{
-				putchar(a + '0');
-				putchar(b + '0');
-				putchar(',');
-				putchar(' ');
+					putchar(',');
+					putchar(' ');
 				}
 			}
+			c++;
 		}
+		d++;
 	}
+	putchar('\n');
 	return (0);
 }
