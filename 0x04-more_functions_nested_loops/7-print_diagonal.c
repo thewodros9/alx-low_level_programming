@@ -21,7 +21,7 @@ void print_diagoanl(int n)
 				_putchar(32);
 			}
 			_putchar(32);
-			_putcahr('\n');
+			_putchar('\n');
 		}
 	}
 }
