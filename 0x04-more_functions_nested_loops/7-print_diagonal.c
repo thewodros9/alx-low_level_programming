@@ -4,7 +4,7 @@
  *  @n: the number of times ptinted
  *  Return: empty
  */
-void print_diagoanl(int n)
+void print_diagonal(int n)
 {
 	int x, y;
 
