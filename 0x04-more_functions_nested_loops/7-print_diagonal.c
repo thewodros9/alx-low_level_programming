@@ -1,8 +1,8 @@
 #include "main.h"
-/*
- *  print_diagonal - draws a diagonal
- *  @n: the number of times ptinted
- *  Return: empty
+/**
+ * print_diagonal - Draws a diagonal line according to parameters
+ * @n: the number of times ptinted
+ * Return: empty
  */
 void print_diagonal(int n)
 {
