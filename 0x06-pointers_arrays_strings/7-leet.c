@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * lest - encod into integer
+ * leet - encod into integer
  * @n: input value
  * Return: n value
  */
