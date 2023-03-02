@@ -1,4 +1,8 @@
 #include <stdio.h>
+/**
+ * main - functin
+ * Return: 0
+ */
 
 int main(void)
 {
