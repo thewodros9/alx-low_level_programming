@@ -7,7 +7,7 @@
 int strl(char *s)
 {
 	if (!*s)
-		return (0);
+		return (1);
 	return (1 + strl(++s));
 }
 /**
@@ -20,7 +20,7 @@ int pl(char *s, int l)
 {
 	if (l < 1)
 		return (1);
-	else if (*s == *(s + 1))
+	if (*s == *(s + 1))
 		return (pl(s + 1, l - 2));
 	return (0);
 }
