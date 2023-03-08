@@ -6,23 +6,24 @@
  */
 int strl(char *s)
 {
-	if (!*s)
+	if (*s == '\0')
 		return (0);
-	return (1 + strl(++s));
+	return (1 + strl(s + 1));
 }
 /**
  * pl - palindrome
  * @s: pointer
  * @l:position
+ * @i: iterator
  * Return: boolena
  */
-int pl(char *s, int l)
+int pl(char *s, int i, int l)
 {
-	if (l < 1)
+	if (*(s + i) != *(s + l - 1))
+		return (0);
+	if (i >= l)
 		return (1);
-	if (*s == *(s + 1))
-		return (pl(s + 1, l - 1));
-	return (1);
+	return (pl(s, i + 1, l - 1));
 }
 /**
  * is_palindrome - palindrome
@@ -31,7 +32,8 @@ int pl(char *s, int l)
  */
 int is_palindrome(char *s)
 {
-	int l = strl(s);
+	if (*s == 0)
+		return (1);
 
-	return (pl(s, l - 1));
+	return (pl(s, 0, strl(s)));
 }
